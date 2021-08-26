@@ -1,0 +1,203 @@
+/* font family - Poppins */
+html {
+    font-family: "poppins";
+    font-family: 10px;
+    color: rgb(62,61,61);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(104, 114, 166)
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    font-size: 1.6rem;
+    margin: 0 10px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.apply {
+    position: relative;
+
+}
+
+.text-overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50% );
+    font-size: 2rem;
+    background: rgba(40,40,40,0.7);
+    border-radius: 3px;
+    padding: 2rem 10rem;
+    color: rgb(195,191,191)
+}
+
+button {
+    background: none;
+    border: 2px solid rgb(81, 163, 218);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: rgb(220,237,255);
+    transform: scale(1.05);
+}
+
+.projects {
+    position: relative;
+    justify-content: center;
+    margin: auto;
+}
+
+.my-projects {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50% );
+    font-size: 2rem;
+    background: rgba(39, 112, 221, 0.7);
+    border-radius: 3px;
+    padding: 2rem 10rem;
+    color: rgb(233, 235, 250)
+}
+
+.my-projects a {
+    font-size: 1rem;
+    color:rgb(236, 27, 27);
+}
+
+a:hover {
+    border-color: rgb(220,237,255);
+    transform: scale(1.05);
+}
+
+.my-projects p {
+    font-size: bold;
+}
+
+.grid-item p {
+    text-align: center;
+    font-size: 1.8rem;
+}
+grid-item:hover {
+    filter: brightness(0.9);
+    transform:scale(1.01);
+    cursor: pointer;
+}
+
+h3 {
+    margin: 0;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.home {
+    background: #eee;
+}
+
+.home-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+    background: rgb(62,61,61);
+    color: #ddd;
+    padding-bottom: 1rem;
+}
+
+footer ul {
+    display: flex;
+    flex: column;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+footer li {
+    padding: 1.6rem 0;
+}
+
+footer p {
+    font-size: 1.6rem;
+}
+
+@media(min-width: 900px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+    .text-overlay {
+        font-size: 2.5rem;
+        padding: 8rem;
+    }
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.grid-item {
+    border: 1px solid lightblue;
+    border-radius: 3px;
+}
+
+.grid-item img {
+    border-radius: 3px 3px 0 0;
+}
+.home {
+    display: flex;
+}
+
+.home > div {
+    flex: 1;
+}
+
+.home h3 {
+    text-align: center;
+    flex: row;
+    justify-content: space-evenly;
+    padding-left: 50px;
+}
+
+footer ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+}
