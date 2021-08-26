@@ -7,7 +7,7 @@
     <title>Guess Number Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="init()">
+<body>
     <main>
 
         <div id="welcomeScreen">
@@ -15,8 +15,8 @@
             <section>
                 <p>Select your difficulty. If you dare...</p>
                 <div class="button-wrapper">
-                    <button onclick="easyMode()">Easy: 10 attempts</button>
-                    <button onclick="hardMode()">Hard: 5 attempts</button>
+                    <button>Easy: 10 attempts</button>
+                    <button>Hard: 5 attempts</button>
                 </div>
             </section>
         </div>
@@ -24,8 +24,7 @@
             <button id="newGameButton">NEW GAME</button>
             <section>
                 <h3 id="textOutput">Your Guess:</h3>
-                <input type="number" id="inputBox" min="1" max="100" onchange="compareGuess" />
-                </section>
+                <input type="number" id="inputBox" min="1" max="100" />
             </section>
             <section>
                 <p>Current Range:</p>
@@ -50,6 +49,6 @@
             </section>
         </div>
     </main>
-    <script src="script.js"></script>
+    
 </body>
 </html>
